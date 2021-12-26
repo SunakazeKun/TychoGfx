@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="TychoGfx" default="default" basedir=".">
+    <description>Builds, tests, and runs the project TychoGfx.</description>
+    <import file="nbproject/build-impl.xml"/>
+	<target name="-pre-jar">
+		<tstamp>
+			<format property="builtdate" pattern="yyyy-MM-dd-HH-mm" />
+		</tstamp>
+		<manifest encoding="UTF-8" file="${manifest.file}">
+			<attribute name="Built-By" value="${user.name}"/>
+			<attribute name="Built-Date" value="${builtdate}"/>
+		</manifest>
+	</target>
+	<target name="-post-jar">
+		<echo file="${dist.dir}/run.bat">start javaw -jar -Xms25m -Xmx25m TychoGfx.jar
+exit</echo>
+		<echo file="${dist.dir}/run.sh">javaw -jar -Xms25m -Xmx25m TychoGfx.jar; exit</echo>
+		<zip destfile="${dist.dir}/TychoGfx.zip" basedir="${dist.dir}" level="9"/>
+	</target>
+</project>
