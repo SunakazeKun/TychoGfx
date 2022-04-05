@@ -16,8 +16,8 @@
  */
 package com.aurumsmods.tychogfx;
 
-import com.aurumsmods.ajul.lang.MathUtil;
-import com.aurumsmods.ajul.util.SwingUtil;
+import com.aurumsmods.ajul.MathUtil;
+import com.aurumsmods.ajul.SwingUtil;
 import com.aurumsmods.tychogfx.format.FlatBuffer;
 import com.aurumsmods.tychogfx.format.LZ10;
 import com.aurumsmods.tychogfx.format.ObjDesc;

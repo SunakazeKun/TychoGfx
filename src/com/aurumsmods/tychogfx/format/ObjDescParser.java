@@ -16,7 +16,7 @@
  */
 package com.aurumsmods.tychogfx.format;
 
-import com.aurumsmods.ajul.util.ColorUtil;
+import com.aurumsmods.ajul.ColorUtil;
 import java.awt.Rectangle;
 import java.awt.image.BufferedImage;
 import java.nio.ByteBuffer;

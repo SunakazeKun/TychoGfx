@@ -16,8 +16,8 @@
  */
 package com.aurumsmods.tychogfx;
 
-import com.aurumsmods.ajul.util.ResourceLoader;
-import com.aurumsmods.ajul.util.SwingUtil;
+import com.aurumsmods.ajul.ResourceLoader;
+import com.aurumsmods.ajul.SwingUtil;
 import java.awt.image.BufferedImage;
 
 /**
@@ -26,9 +26,7 @@ import java.awt.image.BufferedImage;
  * @author Aurum
  */
 public final class TychoGfx {
-    private TychoGfx() {
-        throw new IllegalStateException("Instantiation of this class is forbidden!");
-    }
+    private TychoGfx() { throw new IllegalStateException(); }
     
     public static final ResourceLoader ASSET_LOADER = new ResourceLoader(TychoGfx.class);
     public static final BufferedImage PROGRAM_ICON = ASSET_LOADER.readImage("/assets/icon.png");

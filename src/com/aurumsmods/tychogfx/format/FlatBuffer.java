@@ -16,7 +16,7 @@
  */
 package com.aurumsmods.tychogfx.format;
 
-import com.aurumsmods.ajul.io.BinaryInputStream;
+import com.aurumsmods.littlebigio.BinaryInputStream;
 import java.io.ByteArrayInputStream;
 import java.io.File;
 import java.io.FileInputStream;
